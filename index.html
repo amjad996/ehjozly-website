@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ehjozly – إحجُزلي | رحلتك تبدأ من هنا</title>
+    <meta name="description" content="إحجُزلي | ehjozly - احجز رحلتك أو أرسل طردك بثقة وسهولة. Your Trip Starts Here." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600;700&family=Tajawal:wght@400;700;800&display=swap" rel="stylesheet" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header" data-reveal>
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="ehjozly – إحجُزلي">
+          <span class="brand-icon" aria-hidden="true">🚌</span>
+          <span class="brand-text"><strong>ehjozly</strong> – إحجُزلي</span>
+        </a>
+        <nav class="main-nav" aria-label="Primary">
+          <a href="index.html" data-i18n="navHome" class="nav-link is-active">الرئيسية</a>
+          <a href="services.html" data-i18n="navServices" class="nav-link">الخدمات</a>
+          <a href="pricing.html" data-i18n="navPricing" class="nav-link">الأسعار</a>
+          <a href="faq.html" data-i18n="navFAQ" class="nav-link">الأسئلة</a>
+          <a href="about.html" data-i18n="navAbout" class="nav-link">من نحن</a>
+          <a href="contact.html" data-i18n="navContact" class="nav-link">تواصل</a>
+        </nav>
+        <nav class="lang-switch" aria-label="Language switcher">
+          <button id="btn-ar" class="btn-chip is-active" type="button" aria-pressed="true">ع</button>
+          <a id="btn-en" class="btn-chip" href="en/index.html" aria-pressed="false">En</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="hero-bg-gradient"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy" data-reveal>
+          <p class="tagline-sub" data-i18n="tagline">رحلتك تبدأ من هنا</p>
+          <h1 class="hero-title" data-i18n="heroTitle">احجز رحلتك أو أرسل طردك بثقة وسهولة</h1>
+          <div class="hero-cta-row">
+            <button id="primary-cta" class="btn btn-primary is-disabled" type="button" disabled title="قريبًا نبدأ العمل 🚀" data-i18n-title="soon">
+              <span data-i18n="startNow">ابدأ الآن</span>
+            </button>
+          </div>
+
+          <!-- Search Bar (Disabled) -->
+          <div class="search-bar is-disabled" role="group" aria-label="mock search" data-reveal>
+            <div class="field">
+              <label data-i18n="from">من</label>
+              <input type="text" placeholder="—" disabled />
+            </div>
+            <div class="field">
+              <label data-i18n="to">إلى</label>
+              <input type="text" placeholder="—" disabled />
+            </div>
+            <div class="field">
+              <label data-i18n="date">التاريخ</label>
+              <input type="text" placeholder="—/—/—" disabled />
+            </div>
+            <div class="field">
+              <label data-i18n="passengers">عدد الركاب</label>
+              <input type="text" placeholder="—" disabled />
+            </div>
+            <button class="btn btn-orange" type="button" disabled title="قريبًا نبدأ العمل 🚀" data-i18n-title="soon">
+              <span data-i18n="search">بحث</span>
+            </button>
+            <div id="soon-pop" class="soon-pop" role="alert" aria-live="polite">قريبًا نبدأ العمل 🚀</div>
+          </div>
+
+          <p class="under-search" data-reveal>
+            <span data-i18n="usp1">احجز بسهولة</span>
+            <span class="dot">•</span>
+            <span data-i18n="usp2">وصّل شحنتك</span>
+            <span class="dot">•</span>
+            <span data-i18n="usp3">بسرعة</span>
+            <span class="dot">•</span>
+            <span data-i18n="usp4">بأمان</span>
+            <span class="dot">•</span>
+            <span data-i18n="usp5">بثقة</span>
+          </p>
+        </div>
+
+        <!-- Hero Visual -->
+        <div class="hero-visual" aria-hidden="true" data-reveal>
+          <!-- Simple illustrative SVG -->
+          <svg class="hero-svg" viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#1D7ED6" />
+                <stop offset="100%" stop-color="#FF6B35" />
+              </linearGradient>
+            </defs>
+            <rect x="0" y="0" width="600" height="360" fill="url(#g1)" opacity="0.08" />
+            <g transform="translate(40,120)">
+              <rect rx="16" width="420" height="120" fill="#ffffff" opacity="0.9" />
+              <rect x="18" y="20" width="140" height="20" rx="10" fill="#1D7ED6" opacity="0.2" />
+              <rect x="18" y="50" width="200" height="12" rx="6" fill="#1D7ED6" opacity="0.15" />
+            </g>
+            <g transform="translate(320,80)">
+              <rect width="220" height="140" rx="14" fill="#1D7ED6" />
+              <circle cx="50" cy="130" r="18" fill="#222" />
+              <circle cx="170" cy="130" r="18" fill="#222" />
+              <rect x="20" y="24" width="180" height="40" rx="8" fill="#F5F6FA" />
+            </g>
+            <g transform="translate(80,220)">
+              <rect width="120" height="90" rx="10" fill="#FF6B35" />
+              <path d="M0,40 h120" stroke="#fff" stroke-width="8" />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coming Soon Countdown -->
+    <section id="coming-soon" class="coming-soon" data-reveal>
+      <div class="container">
+        <h2 class="section-title" data-i18n="comingSoon">قادم قريبًا</h2>
+        <p class="section-sub" data-i18n="comingSoonSub">نعمل على إطلاق التجربة الكاملة قريبًا. ترقّبونا!</p>
+        <div class="countdown" role="timer" aria-live="polite">
+          <div class="cd-box"><span id="cd-days">00</span><small data-i18n="days">أيام</small></div>
+          <div class="cd-box"><span id="cd-hours">00</span><small data-i18n="hours">ساعات</small></div>
+          <div class="cd-box"><span id="cd-mins">00</span><small data-i18n="minutes">دقائق</small></div>
+          <div class="cd-box"><span id="cd-secs">00</span><small data-i18n="seconds">ثوانٍ</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" data-reveal>
+      <div class="container">
+        <div class="cards">
+          <article class="card" tabindex="0">
+            <div class="card-icon" aria-hidden="true">🚌</div>
+            <h3 class="card-title" data-i18n="svcBusTitle">حجز الباصات</h3>
+            <p class="card-sub" data-i18n="svcBusSub">رحلتك تبدأ من هنا</p>
+          </article>
+          <article class="card" tabindex="0">
+            <div class="card-icon" aria-hidden="true">📦</div>
+            <h3 class="card-title" data-i18n="svcParcelTitle">شحن الطرود</h3>
+            <p class="card-sub" data-i18n="svcParcelSub">وصلك وين ما بدك</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer" data-reveal>
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <span class="brand-icon" aria-hidden="true">🚌</span>
+          <span class="brand-text small"><strong>ehjozly</strong> – إحجُزلي</span>
+        </div>
+        <div class="copy">
+          <small>© 2025 إحجُزلي | صنع بفخر بواسطة TeGro Group</small>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+

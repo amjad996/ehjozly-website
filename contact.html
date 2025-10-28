@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>تواصل معنا | ehjozly – إحجُزلي</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600;700&family=Tajawal:wght@400;700;800&display=swap" rel="stylesheet" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+      .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+      .contact-card{background:#fff;border-radius:14px;box-shadow:var(--shadow);padding:18px;border:1px solid rgba(0,0,0,.03)}
+      .contact-form label{display:block;margin:8px 0 6px;font-weight:700}
+      .contact-form input,.contact-form textarea{width:100%;border:1px solid #e6e7eb;border-radius:10px;padding:10px 12px;background:#f7f8fc}
+      .contact-form textarea{min-height:120px;resize:vertical}
+      @media (max-width: 900px){.contact-grid{grid-template-columns:1fr}}
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html"><span class="brand-icon">🚌</span><span class="brand-text"><strong>ehjozly</strong> – إحجُزلي</span></a>
+        <nav class="main-nav">
+          <a href="index.html" class="nav-link" data-i18n="navHome">الرئيسية</a>
+          <a href="services.html" class="nav-link" data-i18n="navServices">الخدمات</a>
+          <a href="pricing.html" class="nav-link" data-i18n="navPricing">الأسعار</a>
+          <a href="faq.html" class="nav-link" data-i18n="navFAQ">الأسئلة</a>
+          <a href="about.html" class="nav-link" data-i18n="navAbout">من نحن</a>
+          <a href="contact.html" class="nav-link is-active" data-i18n="navContact">تواصل</a>
+        </nav>
+        <nav class="lang-switch">
+          <button id="btn-ar" class="btn-chip is-active" type="button">ع</button>
+          <a id="btn-en" class="btn-chip" href="en/contact.html">En</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero" style="padding:60px 0 30px">
+      <div class="container">
+        <h1 class="hero-title">تواصل معنا</h1>
+        <p class="section-sub">نسعد برسالتك أو مقترحك، وسنعود إليك سريعًا.</p>
+      </div>
+    </section>
+
+    <main class="container" style="padding:40px 0 80px">
+      <div class="contact-grid">
+        <div class="contact-card contact-form">
+          <h2 class="section-title" style="margin-top:0">نموذج الاتصال</h2>
+          <form id="contact-form">
+            <label>الاسم</label>
+            <input id="cf-name" type="text" placeholder="اسمك" required />
+            <label>البريد الإلكتروني</label>
+            <input id="cf-email" type="email" placeholder="you@example.com" required />
+            <label>الرسالة</label>
+            <textarea id="cf-message" placeholder="اكتب رسالتك هنا" required></textarea>
+            <button class="btn btn-orange" type="submit">إرسال</button>
+            <div style="font-size:12px;color:#4a4e57;margin-top:6px">سيتم فتح بريدك لإرسال الرسالة إلى info@ehjozly.com</div>
+          </form>
+        </div>
+        <div class="contact-card">
+          <h2 class="section-title" style="margin-top:0">معلومات الشركة</h2>
+          <p><strong>ehjozly – إحجُزلي</strong></p>
+          <p>منصة لحجز الرحلات وشحن الطرود.</p>
+          <p><strong>البريد:</strong> support@ehjozly.com</p>
+          <p><strong>الشبكات:</strong> قريبًا</p>
+          <div id="map" class="map" aria-label="خريطة مواقع افتراضية"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand"><span class="brand-icon">🚌</span><span class="brand-text small"><strong>ehjozly</strong> – إحجُزلي</span></div>
+        <div class="copy"><small>© 2025 إحجُزلي | صنع بفخر بواسطة TeGro Group</small></div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+
