@@ -104,6 +104,17 @@ html[dir="ltr"] ol{ text-align:left }
 .card-title{margin:8px 0 4px;font-weight:800}
 .card-sub{margin:0;color:#555}
 
+/* How It Works */
+.howit{padding:20px 0 80px}
+.howit-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.howit-step{background:#fff;border:1px solid rgba(0,0,0,.05);border-radius:16px;padding:16px;box-shadow:var(--shadow);transition:transform .2s ease}
+.howit-step:hover{transform:translateY(-3px)}
+.hi-ico{font-size:22px}
+.hi-title{margin:8px 0 4px;font-weight:800}
+.hi-text{margin:0;color:#4a4e57}
+@media (max-width: 980px){.howit-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width: 620px){.howit-grid{grid-template-columns:1fr}}
+
 /* Footer */
 .site-footer{background:#0f1722;color:#cfd6e4;padding:24px 0}
 .footer-inner{display:flex;align-items:center;justify-content:space-between}

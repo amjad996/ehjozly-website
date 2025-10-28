@@ -20,7 +20,13 @@
       from: 'من', to: 'إلى', date: 'التاريخ', passengers: 'عدد الركاب', search: 'بحث',
       usp1: 'احجز بسهولة', usp2: 'وصّل شحنتك', usp3: 'بسرعة', usp4: 'بأمان', usp5: 'بثقة',
       comingSoon: 'قادم قريبًا', comingSoonSub: 'نعمل على إطلاق التجربة الكاملة قريبًا. ترقّبونا!',
-      days: 'أيام', hours: 'ساعات', minutes: 'دقائق', seconds: 'ثوانٍ'
+      days: 'أيام', hours: 'ساعات', minutes: 'دقائق', seconds: 'ثوانٍ',
+      // how it works
+      howitTitle: 'كيف تعمل إحجُزلي؟', howitSub: 'أربع خطوات بسيطة لبدء رحلتك أو إرسال طردك.',
+      howit1Title: 'اختر الوجهة', howit1Text: 'حدّد من وإلى والتاريخ وعدد الركاب أو نوع الشحنة.',
+      howit2Title: 'قارن الخيارات', howit2Text: 'اطّلع على الرحلات أو مسارات الشحن بسهولة وشفافية.',
+      howit3Title: 'احجز أو أرسل', howit3Text: 'أكمل الإجراءات ببضع نقرات. الدفع يتوفر قريبًا.',
+      howit4Title: 'تتبّع واستلم', howit4Text: 'تابع الحالة أولًا بأول حتى الوصول بأمان.'
     },
     en: {
       // nav
@@ -32,7 +38,13 @@
       from: 'From', to: 'To', date: 'Date', passengers: 'Passengers', search: 'Search',
       usp1: 'Book easily', usp2: 'Ship parcels', usp3: 'Fast', usp4: 'Safe', usp5: 'Trusted',
       comingSoon: 'Coming Soon', comingSoonSub: 'We are launching the full experience soon. Stay tuned!',
-      days: 'Days', hours: 'Hours', minutes: 'Minutes', seconds: 'Seconds'
+      days: 'Days', hours: 'Hours', minutes: 'Minutes', seconds: 'Seconds',
+      // how it works
+      howitTitle: 'How it works', howitSub: 'Four simple steps to start your trip or send a parcel.',
+      howit1Title: 'Choose destination', howit1Text: 'Set from, to, date, and passengers or parcel type.',
+      howit2Title: 'Compare options', howit2Text: 'Browse trips or shipping routes clearly.',
+      howit3Title: 'Book or ship', howit3Text: 'Complete in a few clicks. Payments arriving soon.',
+      howit4Title: 'Track and receive', howit4Text: 'Follow status until safe arrival.'
     }
   };
 
